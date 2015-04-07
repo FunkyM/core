@@ -62,3 +62,5 @@ $templateManager->registerTemplate('application/vnd.oasis.opendocument.spreadshe
 		\OC::$server->getURLGenerator()
 	);
 });
+
+\OC::$server->getJobList()->add('OCA\Files\Lib\DeleteOrphanedFilesJob');
